@@ -1,4 +1,4 @@
-package design_pattern.BuilderPattern;
+package design_pattern.Creational_design_pattern.BuilderPattern;
 
 public class BuilderPattern {
     public static void main(String ar[]) {
