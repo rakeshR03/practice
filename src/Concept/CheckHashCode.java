@@ -14,6 +14,8 @@ public class CheckHashCode {
             System.out.println("key : " + stud);
             System.out.println("value : " + map.get(stud));
         }
+
+
     }
 }
 
