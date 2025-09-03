@@ -30,9 +30,10 @@ public class StreamTest {
         ));
 
         String str = "mynameisrakesh";
-        char[] charArr = str.toCharArray();
+//        char[] charArr = str.toCharArray();
         List<Character> list = str.chars().mapToObj( i -> (char) i).collect(Collectors.toList());
-        Map<Character, Long> countMap = list.stream().collect(Collectors.groupingBy(i -> (char)i, Collectors.counting()));
-
+        System.out.println("list of char : " + list);
+        Map<Character, Long> countMap = list.stream().collect(Collectors.groupingBy(i -> i, Collectors.counting()));
+        System.out.println("map : " + countMap);
     }
 }
